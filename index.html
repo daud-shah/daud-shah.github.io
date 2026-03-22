@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Daud Shah Portfolio</title>
+    <title>Daud Shah | Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0a0a0f">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -21,489 +25,419 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/theme-overrides.css">
+    <link rel="stylesheet" href="css/portfolio-spec.css">
 
 <style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
 }
-
 .zoom-effect:hover {
   transform: scale(1.1);
 }
-
-
 </style>
 
-
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+  <body class="spec-portfolio">
+
+    <div class="spec-orbs" aria-hidden="true">
+      <div class="spec-orb spec-orb--tl"></div>
+      <div class="spec-orb spec-orb--br"></div>
+    </div>
+
+    <div class="spec-page">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target spec-nav" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Daud Shah</a>
+	      <a class="navbar-brand" href="#about">Daud<span class="brand-dot">.</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          <ul class="navbar-nav nav mx-auto align-items-lg-center nav-pill-wrap">
+	          <li class="nav-item"><a href="#about" class="nav-link active"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#research" class="nav-link"><span>Research</span></a></li>
+	          <li class="nav-item"><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Daud Shah</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Computer Vision Engineer   ',
-						'AI Engineer  ',
-						'Machine Learning Engineer  ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Junior Computer Vision Engineer </h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/daud-shah40" class="btn btn-primary py-3 px-4">linkedin</a> 
-							<a href="https://github.com/daud-shah" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+	  <section id="about" class="spec-hero io-fade">
+      <div class="spec-hero-dot-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 pr-lg-5 pt-4 pt-lg-0">
+            <h1 class="mt-3 mb-0 hero-entrance d100">Hi, I'm <span class="gradient-text">Daud Shah</span></h1>
+            <p class="spec-typewriter-line hero-entrance d200 mb-0">I am a <span id="typewriter-role"></span><span class="cursor-blink" aria-hidden="true"></span></p>
+            <p class="spec-hero-desc hero-entrance d300">Computer Vision Engineer building detection, segmentation, tracking, and medical-AI systems — from research-backed prototypes to deployable pipelines. Based in Islamabad.</p>
+            <div class="hero-entrance d400 mt-4 d-flex flex-wrap align-items-center" style="gap: 0.75rem;">
+              <a href="#projects" class="btn btn-spec-primary">View Projects</a>
+              <a href="https://github.com/daud-shah" class="btn btn-spec-ghost" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <div class="spec-hero-social mt-4 hero-entrance d400">
+              <a href="https://github.com/daud-shah" target="_blank" rel="noopener" aria-label="GitHub"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+              <a href="https://www.linkedin.com/in/daud-shah40" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a href="mailto:sdaud4214@gmail.com" aria-label="Email"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="spec-photo-wrap mx-auto">
+              <div class="photo-ping-layer" aria-hidden="true"></div>
+              <div class="photo-glow-layer" aria-hidden="true"></div>
+              <div class="photo-dashed-orbit" aria-hidden="true"></div>
+              <div class="photo-ring-layer" aria-hidden="true"></div>
+              <div class="photo-inner">
+                <img src="images/profile.png" alt="Daud Shah portrait">
+              </div>
+              <div class="float-badge badge-1"><span class="inner">CV / AI</span></div>
+              <div class="float-badge badge-2"><span class="inner">PyTorch</span></div>
+              <div class="float-badge badge-3 animate-float-slow"><span class="inner">YOLO</span></div>
+              <div class="float-badge badge-4 animate-float-slower"><span class="inner">OpenCV</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Daud Shah</span></p>
-										<p><span class="title-s">Job Role: </span> <span> Junior Computer Vision Engineer</span></p>
-										<p><span class="title-s">Experience: </span> <span>1 Years </span></p>
-										<p><span class="title-s">Address: </span> <span> Peshawar, Pakistan</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Python</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span> Object Detection & Segmentation </span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Annotation & Labeling</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Deep Learning</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 1 years Computer Vision Engineer currently pursuing a Bachelor’s degree in Computer Science. I specialize in building intelligent systems using deep learning and computer vision technologies. With hands-on experience in object detection, image segmentation, OCR, video action recognition, and data annotation, I develop real-world AI solutions that address problems in traffic automation, public safety, medical imaging, and smart systems.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span> Junior Computer Vision Engineer; </span></li>
-									<li class="d-flex"><span>Domain:</span> <span> Computer Vision,Deep Learning,Machine Learning </span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Science</span></li>
-									<li class="d-flex"><span>Language:</span> <span> Urdu,Pastho,English</span></li>
-									<li class="d-flex"><span>Tools:</span> <span>Kaggle,Roboflow,&amp Jupiter Notebook;</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>YOLO, ,Streamlit, TensorFlow, OpenCV , MMAction2, GitHub, CVAT, Google Analytics &amp; SEO</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="16">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/daud-shah40" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <section class="spec-stats-bar io-fade" aria-label="Quick stats">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-6 col-md-3 py-3">
+            <div class="spec-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><span class="spec-stat-num" data-count-end="2">0</span><span class="suffix">+</span></div>
+            <div class="spec-stat-label">Years experience</div>
+          </div>
+          <div class="col-6 col-md-3 py-3">
+            <div class="spec-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+            <div><span class="spec-stat-num" data-count-end="3">0</span></div>
+            <div class="spec-stat-label">Companies</div>
+          </div>
+          <div class="col-6 col-md-3 py-3">
+            <div class="spec-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+            <div><span class="spec-stat-num" data-count-end="20">0</span><span class="suffix">+</span></div>
+            <div class="spec-stat-label">Projects built</div>
+          </div>
+          <div class="col-6 col-md-3 py-3">
+            <div class="spec-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><span class="spec-stat-num" data-count-end="2">0</span></div>
+            <div class="spec-stat-label">Freelance platforms</div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <div class="spec-section-divider" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
 
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
+    <section class="ftco-section ftco-no-pb" id="experience">
     	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Computer Vision Engineer with hands-on experience in object detection, image segmentation, OCR, and video analysis using YOLOv8/v11, MMAction2, and OpenCV. Currently pursuing a BS in Computer Science and building real-world AI solutions for smart systems and automation.</p>
+    		<div class="row justify-content-center pb-5 io-fade">
+          <div class="col-md-10 heading-section text-center">
+          	<h1 class="big big-2">Experience</h1>
+            <h2 class="mb-3 spec-section-title">Experience &amp; education</h2>
+            <p class="spec-section-lead">Roles in industry and a long research internship at NCAI; degree work in parallel.</p>
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">OCT 2024-Present</span>
-						<h2> Computer Vision Intern </h2>
-						<span class="position">NCAI Lab UET Peshawar </span>
-						<p class="mt-4">NCAI(National Central of Artificial Intelligence) Lab at UET Peshawar is a premier research center focused on developing AI-driven solutions for real-world challenges in computer vision, automation, and intelligent systems. 
-							<ul>
-								<li>Worked on real-world computer vision projects including ambulance, rickshaw, and license plate detection using YOLOv8 and YOLOv11.</li>
-								<li>Gained hands-on experience with image annotation, model training, testing, and deploying solutions for traffic, safety, and medical use cases..</li>
-								<li>Collaborated on advanced tasks like video action recognition with MMAction2 and OCR-based text extraction systems using PaddleOCR.</li>
-							</ul>
-						</p>
-					</div>
+        <div class="spec-timeline position-relative io-fade">
+          <div class="spec-timeline-line" aria-hidden="true"></div>
 
-				</div>
+          <div class="spec-tl-item">
+            <div class="spec-tl-dot" aria-hidden="true"></div>
+            <div class="spec-tl-card">
+              <div class="spec-tl-role">Computer Vision Engineer</div>
+              <div class="spec-tl-company">CCRIPT Agency</div>
+              <div class="spec-tl-loc">Islamabad, Pakistan</div>
+              <span class="spec-tl-period spec-tl-period-primary">Jan 2026 – Present</span>
+              <div class="spec-tl-body">
+                <ul class="pl-3 mb-0">
+                  <li>YOLO-based detection and segmentation for client imagery; dataset and QA pipelines (Roboflow, CVAT).</li>
+                  <li>Turning prototypes into maintainable deliverables with the team.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-				<!-- <div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
-					</div>
+          <div class="spec-tl-item">
+            <div class="spec-tl-dot" aria-hidden="true"></div>
+            <div class="spec-tl-card">
+              <div class="spec-tl-role">Computer Vision Engineer</div>
+              <div class="spec-tl-company">Neuralogic</div>
+              <div class="spec-tl-loc">Texas, USA (remote)</div>
+              <span class="spec-tl-period spec-tl-period-primary">Jan 2026 – Present</span>
+              <div class="spec-tl-body">
+                <ul class="pl-3 mb-0">
+                  <li>Model development and benchmarking (YOLO family, PyTorch) on US-facing initiatives.</li>
+                  <li>Reliable training/validation workflows and clear communication in a distributed team.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-				</div> -->
-			</div>
+          <div class="spec-tl-item">
+            <div class="spec-tl-dot" aria-hidden="true"></div>
+            <div class="spec-tl-card">
+              <div class="spec-tl-role">AI &amp; Computer Vision Engineer — Intern</div>
+              <div class="spec-tl-company">NCAI Lab, UET Peshawar</div>
+              <div class="spec-tl-loc">Peshawar, Pakistan</div>
+              <span class="spec-tl-period spec-tl-period-primary">Nov 2024 – Jan 2026</span>
+              <div class="spec-tl-body">
+                <ul class="pl-3 mb-0">
+                  <li>Traffic and safety CV: ambulances, rickshaws, license plates (YOLOv8 / v11).</li>
+                  <li>End-to-end annotation → training → evaluation; Roboflow experiment flows.</li>
+                  <li>Video understanding (MMAction2) and OCR (PaddleOCR) with the research group.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-		<br>
-		<br>
+          <div class="spec-tl-item">
+            <div class="spec-tl-dot spec-tl-dot--edu" aria-hidden="true"></div>
+            <div class="spec-tl-card spec-tl-card--edu">
+              <div class="spec-tl-role">Bachelor of Computer Science</div>
+              <div class="spec-tl-company">University of Agriculture, Peshawar</div>
+              <div class="spec-tl-loc">Peshawar, Pakistan</div>
+              <span class="spec-tl-period">Nov 2022 – Nov 2026 (expected)</span>
+              <div class="spec-tl-body">Final year · CGPA 3.57 — coursework and projects aligned with ML, statistics, and data-driven systems.</div>
+            </div>
+          </div>
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2022-2026</span>
-    					<h2>Bachelor of Computer Science </h2>
-    					<span class="position">University of Agriculture, Peshawar</span>
-    					<p class="mt-4">CGPA: 3.57 </p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2022</span>
-    					<h2>Fsc: Pre Engineering </h2>
-    					<span class="position"> Quaid Azam Group of school and Colleges </span>
-    					<p class="mt-4">Grade: B.</p>
-    				</div>
-				</div>
-    		</div>
+          <div class="spec-tl-item">
+            <div class="spec-tl-dot spec-tl-dot--edu" aria-hidden="true"></div>
+            <div class="spec-tl-card spec-tl-card--edu">
+              <div class="spec-tl-role">FSc Pre-Engineering</div>
+              <div class="spec-tl-company">Quaid-e-Azam Group of Schools &amp; Colleges</div>
+              <div class="spec-tl-loc">Pakistan</div>
+              <span class="spec-tl-period">2020 – 2022</span>
+              <div class="spec-tl-body">Grade B — foundation for engineering and CS track.</div>
+            </div>
+          </div>
+        </div>
 
     		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			<div class="col-md-6 text-center io-fade">
+    				<p><a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto" class="btn btn-spec-primary px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
     </section>
 
-   
+    <div class="spec-section-divider spec-section-divider--blue" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
 
-    <section class="ftco-section" id="project-section">
+    <section class="ftco-section ftco-no-pb" id="research">
+      <div class="container">
+        <div class="row justify-content-center mb-4 io-fade">
+          <div class="col-lg-10 text-center">
+            <h2 class="spec-section-title mb-3">Research &amp; lab work</h2>
+            <p class="spec-section-lead">National Center of Artificial Intelligence (NCAI) is where most of my research-grade CV work concentrated — alongside coursework I explored medical imaging, multimodal reasoning, and deployable traffic analytics.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center io-fade">
+          <div class="col-lg-10">
+            <div class="spec-research-card">
+              <h3>Focus areas</h3>
+              <ul class="mb-0 pl-3">
+                <li><strong>Multimodal &amp; explainable medical AI</strong> — interest in vision + clinical text (e.g. ViT / BERT-style setups) and interpretability (Grad-CAM–style cues) for safer assistive diagnosis workflows.</li>
+                <li><strong>Detection &amp; segmentation at scale</strong> — YOLO families on traffic, safety, and ultrasound / MRI-style imagery; emphasis on reproducible training and validation.</li>
+                <li><strong>Video &amp; document understanding</strong> — action recognition pipelines (MMAction2) and OCR (PaddleOCR) for operational systems, not only Kaggle-style benchmarks.</li>
+              </ul>
+              <p class="mt-4 mb-0">Public code and notebooks for these directions live on <a href="https://github.com/daud-shah">GitHub</a> (see Projects and “More repositories”). I am also preparing MS-oriented applications and welcome academic collaborations aligned with computer vision and trustworthy AI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spec-section-divider" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
+
+    <section class="ftco-section" id="skills">
+      <div class="container">
+        <div class="row justify-content-center mb-5 io-fade">
+          <div class="col-md-10 text-center">
+            <h1 class="big big-2">Skills</h1>
+            <h2 class="spec-section-title mb-3">Technical skills</h2>
+            <p class="spec-section-lead">Stack I use daily for CV/ML delivery and research prototypes.</p>
+          </div>
+        </div>
+        <div class="row io-fade">
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">CV</div>
+              <h4>Computer vision &amp; deep learning</h4>
+              <span class="spec-pill">YOLOv5 / v8 / v11</span>
+              <span class="spec-pill">OpenCV</span>
+              <span class="spec-pill">PyTorch</span>
+              <span class="spec-pill">TensorFlow</span>
+              <span class="spec-pill">MediaPipe</span>
+              <span class="spec-pill">MMAction2</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">ML</div>
+              <h4>Data &amp; deployment</h4>
+              <span class="spec-pill">Roboflow</span>
+              <span class="spec-pill">CVAT</span>
+              <span class="spec-pill">Jupyter</span>
+              <span class="spec-pill">Kaggle</span>
+              <span class="spec-pill">RunPod</span>
+              <span class="spec-pill">Streamlit</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">∫</div>
+              <h4>Languages</h4>
+              <span class="spec-pill">Python</span>
+              <span class="spec-pill">C++</span>
+              <span class="spec-pill">JavaScript</span>
+              <span class="spec-pill">HTML / CSS</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">+</div>
+              <h4>Medical &amp; OCR</h4>
+              <span class="spec-pill">Segmentation</span>
+              <span class="spec-pill">Multimodal (ViT / BERT)</span>
+              <span class="spec-pill">PaddleOCR</span>
+              <span class="spec-pill">Ultrasound / MRI-style CV</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">↻</div>
+              <h4>Tracking &amp; analytics</h4>
+              <span class="spec-pill">Object tracking</span>
+              <span class="spec-pill">Motion analysis</span>
+              <span class="spec-pill">Traffic analytics</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="spec-skill-card h-100">
+              <div class="spec-skill-icon">◎</div>
+              <h4>Other</h4>
+              <span class="spec-pill">Git / GitHub</span>
+              <span class="spec-pill">Urdu · Pashto · English</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spec-section-divider spec-section-divider--blue" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
+
+    <section class="ftco-section" id="projects">
+      <!-- Public portfolio: do not add RAG / local-PDF–Ollama chatbot or Agentek AI projects. -->
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample real-world projects CV,DL,ML.</p>
+            <p>Featured builds below use the original thumbnails. For many more experiments and notebooks, see the list under “More repositories” and my GitHub profile.</p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+          	<div class="blog-entry justify-content-end spec-proj-card glow-on-hover io-fade">
+              <span class="spec-proj-watermark" aria-hidden="true">01</span>
               <a href="https://github.com/daud-shah/ai-trafficsystem" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/daud-shah/ai-trafficsystem">AI Traffic Control System</a></h3>
-                <p>Real-time vehicle detection system with static traffic signal control based on lane density analysis using YOLOv11.</p>
+                <p>Real-time vehicle detection with signal timing from lane density using YOLOv11.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+          	<div class="blog-entry justify-content-end spec-proj-card glow-on-hover io-fade">
+              <span class="spec-proj-watermark" aria-hidden="true">02</span>
               <a href="https://github.com/daud-shah/pakistani-license-plate-detection/blob/main/pakistani-license-plate-notebook.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/daud-shah/pakistani-license-plate-detection/blob/main/pakistani-license-plate-notebook.ipynb">Pakistani License Plate Detection</a></h3>
-                <p>YOLOv8 + PaddleOCR pipeline for automatic license plate recognition and text extraction with CSV output.</p>
+                <p>YOLOv8 plus PaddleOCR for plate text and CSV export.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+          	<div class="blog-entry spec-proj-card glow-on-hover io-fade">
+              <span class="spec-proj-watermark" aria-hidden="true">03</span>
               <a href="https://github.com/daud-shah/Detecet-tumor-and-deadcell" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/daud-shah/Detecet-tumor-and-deadcell">Brain Tumor Segmentation</a></h3>
-                <p>YOLOv11 model for detecting tumors and dead cells in MRI scans with volumetric analysis capabilities.</p>
+                <p>YOLOv11 on MRI-style scans for tumor and dead-cell regions.</p>
               </div>
             </div>
           </div>
         </div>
 	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
+		<div class="row d-flex justify-content-center">
 			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
+				<div class="blog-entry justify-content-end spec-proj-card glow-on-hover io-fade">
+				<span class="spec-proj-watermark" aria-hidden="true">04</span>
 				<a href="https://github.com/daud-shah/appliance-status-detection" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="https://github.com/daud-shah/appliance-status-detection">Appliance Status Detection</a></h3>
-				  <p>Computer vision system to detect and classify the operational status of household appliances using YOLO models.</p>
+				  <h3 class="heading"><a href="https://github.com/daud-shah/appliance-status-detection">Appliance Status Detection</a></h3>
+				  <p>Classify whether appliances are on or off from camera frames with YOLO.</p>
 				</div>
 			  </div>
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				<div class="blog-entry justify-content-end spec-proj-card glow-on-hover io-fade">
+				<span class="spec-proj-watermark" aria-hidden="true">05</span>
+				<a href="https://github.com/daud-shah/ambulance_ricksha_delection" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="#">Ambulance & Rickshaw Detection</a></h3>
-				  <p>Multi-class detection system for identifying ambulances and rickshaws in traffic scenarios with YOLOv11.</p>
+				  <h3 class="heading"><a href="https://github.com/daud-shah/ambulance_ricksha_delection">Ambulance &amp; Rickshaw Detection</a></h3>
+				  <p>Multi-class YOLOv11 detectors for emergency and rickshaw traffic.</p>
 				</div>
 			  </div>
 			</div>
 		 </div>
+
+        <div class="row justify-content-center mt-5 pt-lg-3">
+          <div class="col-lg-10 io-fade">
+            <div class="portfolio-more-repo panel-glass">
+              <h3 class="mb-4" style="font-size: 1.35rem; font-weight: 600;">More repositories</h3>
+              <p class="mb-4">Each line is a one-line summary. To read code, notebooks, or train configs, open the repo on GitHub — everything lives under <a href="https://github.com/daud-shah">github.com/daud-shah</a>.</p>
+              <ul class="list-unstyled portfolio-repo-list mb-0">
+                <li><strong><a href="https://github.com/daud-shah/Explainable-Multimodal-Medical-Diagnosis-using-IU-X-Ray-">Explainable Multimodal Medical Diagnosis (IU X-Ray)</a></strong> — ViT + clinical BERT + explainability for chest X-ray workflows. <span class="repo-hint">Study it on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Breast_Ultrasound_Tumor_Segmentation_yolov8-model-full-project">Breast Ultrasound Tumor Segmentation</a></strong> — Full YOLOv8 pipeline on ultrasound data. <span class="repo-hint">See the project on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Breast_Lesion_Segmentation_using_YOLO">Breast Lesion Segmentation</a></strong> — Lesion-focused YOLO segmentation experiments. <span class="repo-hint">Browse the repo →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/medical-things-detection">Medical Things Detection</a></strong> — General medical-object detection with YOLO. <span class="repo-hint">Code on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/construction-safety-monitoring-using-yolov8">Construction Safety Monitoring</a></strong> — YOLOv8 for site safety and PPE-style monitoring. <span class="repo-hint">Clone or study on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Face-Mask-Detection-System">Face Mask Detection System</a></strong> — Binary mask detection for public-health scenarios. <span class="repo-hint">Details on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/fire-smoke-detection">Fire &amp; Smoke Detection</a></strong> — Vision models for early fire/smoke cues. <span class="repo-hint">Repository link →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/traffic_safety_-helmat_detection-">Traffic Safety / Helmet Detection</a></strong> — Road-safety oriented detection. <span class="repo-hint">On GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Aircraft-detection-and-tracking">Aircraft Detection &amp; Tracking</a></strong> — Detection with tracking-style experimentation. <span class="repo-hint">Explore on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Padel-Match-Player-Detection-Tracking-Motion-Analysis">Padel Match: Detection, Tracking &amp; Motion</a></strong> — Sports analytics with YOLO and motion cues. <span class="repo-hint">See GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Advanced-Traffic-Sign-Recognition-System">Advanced Traffic Sign Recognition</a></strong> — Sign classification / recognition stack. <span class="repo-hint">Study on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/humanizer-pro">Humanizer Pro</a></strong> — NLP utility project for text humanization. <span class="repo-hint">Repo on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Fake-News-Detection-using-MachineLearning">Fake News Detection</a></strong> — Classical ML + NLP for misinformation experiments. <span class="repo-hint">Browse on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/british-airways_project">British Airways Review Analysis</a></strong> — Data-science case study in Jupyter. <span class="repo-hint">Notebooks on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Cognifyz_internship">Cognifyz Internship Tasks</a></strong> — Structured internship deliverables. <span class="repo-hint">On GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/Machine-Learning">Machine Learning collection</a></strong> — Curated ML exercises and mini-projects. <span class="repo-hint">Open on GitHub →</span></li>
+                <li><strong><a href="https://github.com/daud-shah/NCAI_LAB_TASK">NCAI Lab Task</a></strong> — Lab assignments and experiments from NCAI. <span class="repo-hint">See GitHub →</span></li>
+              </ul>
+              <p class="mt-4 mb-0 spec-section-lead" style="max-width: none;">Want the full picture? Visit <a href="https://github.com/daud-shah?tab=repositories">all repositories</a> on my GitHub profile.</p>
+            </div>
+          </div>
+        </div>
 	  </div>
     </section>
 
+    <div class="spec-section-divider" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
+
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+	  <div class="ftco-section ftco-hireme margin-top hireme-gradient-only io-fade">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
@@ -518,88 +452,66 @@
 		</div>
 	</section>
 
+    <div class="spec-section-divider spec-section-divider--blue" aria-hidden="true"><span class="spec-divider-diamond"></span></div>
 
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <section class="ftco-section contact-section ftco-no-pb spec-contact-wrap" id="contact">
+      <div class="spec-contact-sweeps" aria-hidden="true">
+        <div class="sweep-line sweep-line-1"></div>
+        <div class="sweep-line sweep-line-2"></div>
+        <div class="sweep-line sweep-line-3"></div>
+      </div>
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
+      	<div class="row justify-content-center mb-5 pb-3 io-fade">
+          <div class="col-md-8 heading-section text-center spec-contact-heading">
             <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+            <h2 class="mb-2 spec-section-title">Let's Connect</h2>
+            <div class="bar" aria-hidden="true"></div>
+            <p class="mt-4 spec-section-lead">Have a project in mind or want to collaborate on AI research? Let's connect and build something incredible.</p>
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+        <div class="row d-flex contact-info mb-5 justify-content-center">
+          <div class="col-md-5 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center spec-contact-box io-fade w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p> Peshawar,Pakistan </p>
+          		<h3 class="mb-2">Location</h3>
+	            <p>Islamabad, Pakistan</p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="#">03404534543</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+          <div class="col-md-5 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center spec-contact-box io-fade w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="#">sdaud4214@gmail.com</a></p>
+          		<h3 class="mb-2">Email</h3>
+	            <p><a href="mailto:sdaud4214@gmail.com">sdaud4214@gmail.com</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto">resumelink</a></p>
-	          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 io-fade">
+          <div class="col-md-8 text-center">
+            <a href="mailto:sdaud4214@gmail.com" class="btn btn-spec-cta-mail">Send message</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-		  <!-- <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/daud-shah40"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div> -->
-   </div>
- </section>
+    </div><!-- /.spec-page -->
 
+    <button type="button" class="spec-scroll-top" id="scroll-top-btn" aria-label="Scroll to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
- 
-	
     <footer class="ftco-footer ftco-section">
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	Daud Shah &middot; &copy; <script>document.write(new Date().getFullYear());</script> · Portfolio · Template <i class="icon-heart color-danger" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
@@ -608,7 +520,7 @@
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#334155"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f97316"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -625,6 +537,7 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="js/portfolio-spec.js"></script>
     
   </body>
 </html>

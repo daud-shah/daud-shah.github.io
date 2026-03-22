@@ -72,7 +72,7 @@
 	    var href = $.attr(this, 'href');
 
 	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top - 70
+	        scrollTop: $($.attr(this, 'href')).offset().top - 85
 	    }, 500, function() {
 	    	// window.location.hash = href;
 	    });
@@ -84,6 +84,7 @@
 	
 
 	var carousel = function() {
+		if (!$('.home-slider').length) return;
 		$('.home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,

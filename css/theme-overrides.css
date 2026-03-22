@@ -1,0 +1,110 @@
+/* Daud Shah portfolio — refinements (load after style.css) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero side image (illustration or portrait) */
+.hero .one-third.img {
+  background-size: cover;
+  background-position: center bottom;
+}
+@media (max-width: 991.98px) {
+  .hero .one-third.img {
+    background-position: center center;
+    min-height: 260px;
+  }
+}
+
+/* GitHub CTA band — no photo banner, gradient only */
+.ftco-hireme.hireme-gradient-only {
+  background-image: none !important;
+}
+.ftco-hireme.hireme-gradient-only::before {
+  background: linear-gradient(
+    125deg,
+    rgba(13, 148, 136, 0.45) 0%,
+    rgba(99, 102, 241, 0.3) 45%,
+    rgba(11, 18, 32, 0.97) 100%
+  ) !important;
+}
+
+.hero .text h1 span {
+  background: linear-gradient(105deg, #5eead4 0%, #2dd4bf 45%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.owl-carousel.home-slider .owl-dots .owl-dot.active {
+  background: #2dd4bf !important;
+}
+
+.owl-carousel.home-slider .owl-dots .owl-dot:after {
+  border-color: rgba(45, 212, 191, 0.35) !important;
+}
+
+.block-20 {
+  border-radius: 10px;
+}
+
+.blog-entry .block-20 {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.ftco-navbar-light.scrolled .navbar-toggler {
+  color: rgba(255, 255, 255, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.services-1:hover h3,
+.services-1:hover h3 a {
+  color: #0b1220 !important;
+}
+
+.services-1:hover h3:after {
+  background: #0b1220 !important;
+}
+
+/* “More repositories” panel under featured projects */
+.portfolio-more-repo.panel-glass {
+  padding: 2rem 2.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(45, 212, 191, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-repo-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.portfolio-repo-list li:last-child {
+  border-bottom: none;
+}
+
+.portfolio-repo-list a {
+  color: #5eead4;
+}
+
+.portfolio-repo-list a:hover {
+  color: #99f6e4;
+}
+
+.portfolio-repo-list .repo-hint {
+  color: rgba(148, 163, 184, 0.95);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-repo-list .repo-hint {
+    display: block;
+    white-space: normal;
+    margin-top: 0.25rem;
+  }
+}
