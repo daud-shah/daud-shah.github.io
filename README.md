@@ -20,12 +20,9 @@ Personal portfolio website for **Daud Shah** — Computer Vision & AI engineer f
 
 ---
 
-## CV downloads
+## CV download
 
-| Version | Link |
-|--------|------|
-| AI Engineer CV | [Google Drive](https://drive.google.com/file/d/1o2fJ3T8JBF4rRon5_PHgiOEbD45Qivei/view?usp=sharing) |
-| Computer Vision Engineer CV | [Google Drive](https://drive.google.com/file/d/1ZX5yOj3NuVQfkGFJdGw8Cu952wbJ2vUo/view?usp=sharing) |
+**Computer Vision Engineer CV:** [Google Drive](https://drive.google.com/file/d/1amt4bbnjmHXHvMw92g00R1QPQW0EblN8/view?usp=sharing)
 
 ---
 
