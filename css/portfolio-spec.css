@@ -900,6 +900,96 @@ body.spec-portfolio::-webkit-scrollbar-thumb:hover {
   line-height: 1.7;
 }
 
+.spec-subsection-title {
+  color: var(--spec-fg);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+/* Research paper cards */
+.spec-paper-card,
+.spec-client-card {
+  background: rgba(18, 18, 26, 0.55);
+  border: 1px solid rgba(36, 36, 54, 0.65);
+  border-radius: 14px;
+  padding: 1.5rem 1.6rem;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.spec-paper-card:hover,
+.spec-client-card:hover {
+  border-color: rgba(249, 115, 22, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+}
+.spec-paper-card h3,
+.spec-client-card h4 {
+  color: var(--spec-fg);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  margin: 0.65rem 0 0.35rem;
+}
+.spec-paper-meta {
+  color: rgba(148, 163, 184, 0.9);
+  font-size: 0.82rem;
+  margin-bottom: 0.65rem;
+}
+.spec-paper-card p,
+.spec-client-card p {
+  color: var(--spec-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+.spec-paper-card strong,
+.spec-client-card strong {
+  color: var(--spec-fg);
+  font-weight: 600;
+}
+.spec-paper-card a {
+  color: var(--spec-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.spec-paper-status,
+.spec-client-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+}
+.spec-paper-status--prep {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.35);
+}
+.spec-paper-status--ready {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}
+.spec-paper-status--review {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+.spec-client-tag {
+  background: rgba(59, 130, 246, 0.12);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.28);
+}
+.spec-client-card {
+  border-color: rgba(59, 130, 246, 0.22);
+}
+.spec-client-card:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
 /* Skills */
 .spec-skill-card {
   background: rgba(18, 18, 26, 0.4);

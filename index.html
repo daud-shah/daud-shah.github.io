@@ -75,7 +75,7 @@
           <div class="col-lg-6 pr-lg-5 pt-4 pt-lg-0">
             <h1 class="mt-3 mb-0 hero-entrance d100">Hi, I'm <span class="gradient-text">Daud Shah</span></h1>
             <p class="spec-typewriter-line hero-entrance d200 mb-0">I am a <span id="typewriter-role"></span><span class="cursor-blink" aria-hidden="true"></span></p>
-            <p class="spec-hero-desc hero-entrance d300">Computer Vision Engineer at CCRIPT Agency and Neuralogic — object detection, data annotation, VLMs, and Streamlit demos, including CV on architectural drawings. Based in Islamabad.</p>
+            <p class="spec-hero-desc hero-entrance d300">Computer Vision &amp; AI engineer — multimodal medical AI, object detection, VLMs, and research manuscripts ready for publication. Recent industry experience at CCRIPT Agency and Neuralogic. Based in Islamabad.</p>
             <div class="hero-entrance d400 mt-4 d-flex flex-wrap align-items-center" style="gap: 0.75rem;">
               <a href="#projects" class="btn btn-spec-primary">View Projects</a>
               <a href="https://github.com/daud-shah" class="btn btn-spec-ghost" target="_blank" rel="noopener">GitHub</a>
@@ -140,7 +140,7 @@
           <div class="col-md-10 heading-section text-center">
           	<h1 class="big big-2">Experience</h1>
             <h2 class="mb-3 spec-section-title">Experience &amp; education</h2>
-            <p class="spec-section-lead">Building production-oriented computer vision at CCRIPT Agency and Neuralogic; previously a research internship at NCAI (completed). Degree work in parallel.</p>
+            <p class="spec-section-lead">Six months of computer vision engineering at CCRIPT Agency and Neuralogic (Jan–Jun 2026); research internship at NCAI (completed); degree work in parallel.</p>
           </div>
         </div>
 
@@ -153,7 +153,7 @@
               <div class="spec-tl-role">Computer Vision Engineer</div>
               <div class="spec-tl-company">CCRIPT Agency</div>
               <div class="spec-tl-loc">Islamabad, Pakistan</div>
-              <span class="spec-tl-period spec-tl-period-primary">Jan 2026 – Present</span>
+              <span class="spec-tl-period">Jan 2026 – Jun 2026</span>
               <div class="spec-tl-body">
                 <ul class="pl-3 mb-0">
                   <li>End-to-end object detection and segmentation on client imagery using YOLO-family models — from dataset design through training, validation, and delivery-ready inference.</li>
@@ -173,7 +173,7 @@
               <div class="spec-tl-role">Computer Vision Engineer</div>
               <div class="spec-tl-company">Neuralogic</div>
               <div class="spec-tl-loc">Texas, USA (remote)</div>
-              <span class="spec-tl-period spec-tl-period-primary">Jan 2026 – Present</span>
+              <span class="spec-tl-period">Jan 2026 – Jun 2026</span>
               <div class="spec-tl-body">
                 <ul class="pl-3 mb-0">
                   <li>Object detection and model benchmarking (YOLO family, PyTorch) on US-facing computer vision initiatives in a remote, distributed team.</li>
@@ -228,8 +228,12 @@
         </div>
 
     		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center io-fade">
-    				<p><a href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto" class="btn btn-spec-primary px-5">Download CV</a></p>
+    			<div class="col-md-10 text-center io-fade">
+    				<p class="mb-3 spec-section-lead" style="max-width: none;">Download the version that fits your context:</p>
+    				<div class="d-flex flex-wrap justify-content-center" style="gap: 0.75rem;">
+    				  <a href="https://drive.google.com/file/d/1o2fJ3T8JBF4rRon5_PHgiOEbD45Qivei/view?usp=sharing" class="btn btn-spec-primary px-4" target="_blank" rel="noopener">AI Engineer CV</a>
+    				  <a href="https://drive.google.com/file/d/1ZX5yOj3NuVQfkGFJdGw8Cu952wbJ2vUo/view?usp=sharing" class="btn btn-spec-ghost px-4" target="_blank" rel="noopener">Computer Vision Engineer CV</a>
+    				</div>
     			</div>
     		</div>
     	</div>
@@ -241,20 +245,57 @@
       <div class="container">
         <div class="row justify-content-center mb-4 io-fade">
           <div class="col-lg-10 text-center">
-            <h2 class="spec-section-title mb-3">Research &amp; lab work</h2>
-            <p class="spec-section-lead">National Center of Artificial Intelligence (NCAI) is where most of my research-grade CV work concentrated — alongside coursework I explored medical imaging, multimodal reasoning, and deployable traffic analytics.</p>
+            <h2 class="spec-section-title mb-3">Research &amp; publications</h2>
+            <p class="spec-section-lead">Manuscripts and systems ready for journal submission — multimodal medical AI, efficient video recognition, and clinical imaging. Lab work at NCAI complemented this with traffic CV and deployable pipelines.</p>
           </div>
         </div>
-        <div class="row justify-content-center io-fade">
+
+        <div class="row spec-research-papers io-fade">
+          <div class="col-lg-6 mb-4">
+            <article class="spec-paper-card h-100">
+              <span class="spec-paper-status spec-paper-status--prep">IEEE JBHI · In preparation</span>
+              <h3>Multi-Modal Chest X-Ray Classification</h3>
+              <p class="spec-paper-meta">Final Year Project · University of Agriculture, Peshawar · 2025</p>
+              <p>ViT + Bio-ClinicalBERT with four-layer bidirectional cross-attention on 172,202 image–report pairs from two hospitals. <strong>98.52%</strong> macro-AUC across 15 pathology labels; cross-hospital gap <strong>1.30%</strong>; Grad-CAM interpretability.</p>
+            </article>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <article class="spec-paper-card h-100">
+              <span class="spec-paper-status spec-paper-status--ready">IEEE Access · Manuscript prepared</span>
+              <h3>DAUD-NET v2 — Efficient Video Action Recognition</h3>
+              <p class="spec-paper-meta">Dual-attention transformer · UCF-101</p>
+              <p>Sparse local–global temporal attention with adaptive temporal pooling. <strong>97.62%</strong> accuracy on UCF-101 at <strong>71 GFLOPs</strong> — 44% fewer attention computations than full attention.</p>
+            </article>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <article class="spec-paper-card h-100">
+              <span class="spec-paper-status spec-paper-status--ready">Ready for publication</span>
+              <h3>Multimodal Medical AI for Chest Disease Classification</h3>
+              <p class="spec-paper-meta">ResNet-50 + BioClinicalBERT · IU Chest X-Ray</p>
+              <p>End-to-end system across 16 pathology categories: <strong>95.20%</strong> test accuracy, <strong>0.9921</strong> weighted AUC-ROC. Grad-CAM explainability, severity prediction, and NIH ChestX-ray14 cross-validation.</p>
+              <p class="mb-0 mt-3"><a href="https://github.com/daud-shah/Explainable-Multimodal-Medical-Diagnosis-using-IU-X-Ray-" target="_blank" rel="noopener">View code on GitHub →</a></p>
+            </article>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <article class="spec-paper-card h-100">
+              <span class="spec-paper-status spec-paper-status--review">Journal · Under review</span>
+              <h3>CoNKAN — Kidney Stone Detection in CT Scans</h3>
+              <p class="spec-paper-meta">Co-authored · ConvNeXt-Small + KAN attention</p>
+              <p>ConvNeXt backbone with Kolmogorov-Arnold Network channel attention for CT stone detection. <strong>99.13%</strong> accuracy, zero false positives on 346 test images; outperforms ResNet-50, DenseNet-121, VGG-16, and EfficientNet-B2. MixUp, two-stage fine-tuning, ablation study on <a href="https://github.com/daud-shah" target="_blank" rel="noopener">GitHub</a>.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2 io-fade">
           <div class="col-lg-10">
             <div class="spec-research-card">
-              <h3>Focus areas</h3>
+              <h3>Broader research focus</h3>
               <ul class="mb-0 pl-3">
-                <li><strong>Multimodal &amp; explainable medical AI</strong> — interest in vision + clinical text (e.g. ViT / BERT-style setups) and interpretability (Grad-CAM–style cues) for safer assistive diagnosis workflows.</li>
-                <li><strong>Detection &amp; segmentation at scale</strong> — YOLO families on traffic, safety, and ultrasound / MRI-style imagery; emphasis on reproducible training and validation.</li>
-                <li><strong>Video &amp; document understanding</strong> — action recognition pipelines (MMAction2) and OCR (PaddleOCR) for operational systems, not only Kaggle-style benchmarks.</li>
+                <li><strong>Multimodal &amp; explainable medical AI</strong> — vision + clinical text with Grad-CAM-style interpretability for assistive diagnosis.</li>
+                <li><strong>Efficient video &amp; detection at scale</strong> — transformers and YOLO families with reproducible training and validation.</li>
+                <li><strong>Operational CV</strong> — traffic analytics, OCR, and annotation-to-deployment pipelines from NCAI lab work.</li>
               </ul>
-              <p class="mt-4 mb-0">Public code and notebooks for these directions live on <a href="https://github.com/daud-shah">GitHub</a> (see Projects and “More repositories”). I am also preparing MS-oriented applications and welcome academic collaborations aligned with computer vision and trustworthy AI.</p>
+              <p class="mt-4 mb-0">More experiments and notebooks on <a href="https://github.com/daud-shah">GitHub</a>. Preparing MS-oriented applications and open to academic collaborations in computer vision and trustworthy AI.</p>
             </div>
           </div>
         </div>
@@ -345,13 +386,44 @@
     <section class="ftco-section" id="projects">
       <!-- Public portfolio: do not add RAG / local-PDF–Ollama chatbot or Agentek AI projects. -->
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Featured builds below use the original thumbnails. For many more experiments and notebooks, see the list under “More repositories” and my GitHub profile.</p>
+            <p>Client deliverables and research-grade builds below. Open-source work and notebooks are listed under “More repositories” and on GitHub.</p>
           </div>
         </div>
+
+        <div class="row justify-content-center mb-5 io-fade">
+          <div class="col-lg-10">
+            <h3 class="spec-subsection-title mb-4">Client &amp; deliverable projects</h3>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <article class="spec-client-card h-100">
+                  <span class="spec-client-tag">Client · Remote sensing &amp; GIS</span>
+                  <h4>Flood Hazard &amp; Urban Sprawl Prediction</h4>
+                  <p class="spec-paper-meta">Islamabad Capital Territory · ML · Python · 2030–2050</p>
+                  <p>End-to-end ML pipeline predicting urbanization and flood hazard from LULC satellite data. Six regression models per land-cover class (LOOCV); vectorized polynomial regression across 35M HEC-RAS pixels (Depth, Velocity, WSE). Near-perfect correlation (<strong>r = 0.99</strong>) between sprawl and worsening flood risk. Delivered GeoTIFF maps, ArcGIS overlays, notebooks, and technical documentation.</p>
+                </article>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <article class="spec-client-card h-100">
+                  <span class="spec-client-tag">University of Stirling, UK · MSc AI / Big Data</span>
+                  <h4>Speech Emotion Recognition</h4>
+                  <p class="spec-paper-meta">Audio ML · PyTorch · librosa</p>
+                  <p>End-to-end SER system: merged RAVDESS, CREMA-D, TESS, and SAVEE (<strong>62,000+</strong> samples), 234 acoustic features per clip (MFCC, Mel, Chroma, Spectral Contrast, Tonnetz). Compared SVM, 1D-CNN, CNN-LSTM, and CNN-LSTM with channel + spatial attention — novel attention variant targeting <strong>93–97%</strong> across eight emotions.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4 io-fade">
+          <div class="col-lg-10">
+            <h3 class="spec-subsection-title mb-4">Featured open-source projects</h3>
+          </div>
+        </div>
+
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end spec-proj-card glow-on-hover io-fade">
