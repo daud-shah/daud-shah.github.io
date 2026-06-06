@@ -57,7 +57,7 @@ Personal portfolio website for **Daud Shah** — Computer Vision & AI engineer f
 
 ### University of Agriculture, Peshawar — BS Computer Science
 - **Period:** Nov 2022 – Nov 2026 (expected)  
-- Final year · CGPA 3.57  
+- Final year · CGPA 3.56  
 
 ### Quaid-e-Azam Group of Schools & Colleges — FSc Pre-Engineering
 - **Period:** 2020 – 2022 · Grade B  
